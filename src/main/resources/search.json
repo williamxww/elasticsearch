@@ -1,0 +1,145 @@
+// GET red89/test/_search
+{
+  "from": 0,
+  "size": 20,
+  "query": {
+    "match": {
+      "name": {
+        "query": "中华",
+        "operator": "AND",
+        "prefix_length": 0,
+        "max_expansions": 50,
+        "fuzzy_transpositions": true,
+        "lenient": false,
+        "zero_terms_query": "NONE",
+        "boost": 1.0
+      }
+    }
+  },
+  "post_filter": {
+    "bool": {
+      "must": [
+        {
+          "bool": {
+            "should": [
+              {
+                "match": {
+                  "tel": {
+                    "query": "18612855433",
+                    "operator": "OR",
+                    "prefix_length": 0,
+                    "max_expansions": 50,
+                    "fuzzy_transpositions": true,
+                    "lenient": false,
+                    "zero_terms_query": "NONE",
+                    "boost": 1.0
+                  }
+                }
+              }
+            ],
+            "adjust_pure_negative": true,
+            "boost": 1.0
+          }
+        },
+        {
+          "range": {
+            "age": {
+              "from": 0,
+              "to": 45,
+              "include_lower": true,
+              "include_upper": true,
+              "boost": 1.0
+            }
+          }
+        }
+      ],
+      "adjust_pure_negative": true,
+      "boost": 1.0
+    }
+  },
+  "explain": true,
+  "aggregations": {
+    "agg": {
+      "filter": {
+        "bool": {
+          "must": [
+            {
+              "bool": {
+                "should": [
+                  {
+                    "match": {
+                      "tel": {
+                        "query": "18612855433",
+                        "operator": "OR",
+                        "prefix_length": 0,
+                        "max_expansions": 50,
+                        "fuzzy_transpositions": true,
+                        "lenient": false,
+                        "zero_terms_query": "NONE",
+                        "boost": 1.0
+                      }
+                    }
+                  }
+                ],
+                "adjust_pure_negative": true,
+                "boost": 1.0
+              }
+            },
+            {
+              "range": {
+                "age": {
+                  "from": 0,
+                  "to": 45,
+                  "include_lower": true,
+                  "include_upper": true,
+                  "boost": 1.0
+                }
+              }
+            }
+          ],
+          "adjust_pure_negative": true,
+          "boost": 1.0
+        }
+      },
+      "aggregations": {
+        "agg": {
+          "terms": {
+            "field": "attr_name",
+            "size": 100,
+            "min_doc_count": 1,
+            "shard_min_doc_count": 0,
+            "show_term_doc_count_error": false,
+            "order": [
+              {
+                "_count": "desc"
+              },
+              {
+                "_key": "asc"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "range": {
+      "range": {
+        "field": "age",
+        "ranges": [
+          {
+            "from": 0.0,
+            "to": 30.0
+          },
+          {
+            "from": 30.0,
+            "to": 50.0
+          },
+          {
+            "from": 50.0,
+            "to": 100.0
+          }
+        ],
+        "keyed": false
+      }
+    }
+  }
+}

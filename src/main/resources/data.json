@@ -1,0 +1,194 @@
+{
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 21,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "red89",
+        "_type": "test",
+        "_id": "14",
+        "_score": 1,
+        "_source": {
+          "date": "2017-12-11T09:55:42.261Z",
+          "attr_name": [
+            "品牌_sku_attr14",
+            "商品类别_sku_attr14",
+            "面料_sku_attr14"
+          ],
+          "name": "中华人民共和国14",
+          "tel": "18612855433",
+          "message": "程序设计14",
+          "create_date": "2017-12-11T09:55:42.261Z",
+          "age": 44
+        }
+      },
+      {
+        "_index": "red89",
+        "_type": "test",
+        "_id": "19",
+        "_score": 1,
+        "_source": {
+          "date": "2017-12-11T09:55:42.261Z",
+          "attr_name": [
+            "品牌_sku_attr19",
+            "商品类别_sku_attr19",
+            "面料_sku_attr19"
+          ],
+          "name": "中华人民共和国19",
+          "tel": "18612855433",
+          "message": "程序设计19",
+          "create_date": "2017-12-11T09:55:42.261Z",
+          "age": 49
+        }
+      },
+      {
+        "_index": "red89",
+        "_type": "test",
+        "_id": "5",
+        "_score": 1,
+        "_source": {
+          "date": "2017-12-11T09:55:42.257Z",
+          "attr_name": [
+            "品牌_sku_attr5",
+            "商品类别_sku_attr5",
+            "面料_sku_attr5"
+          ],
+          "name": "中华人民共和国5",
+          "tel": "18612855433",
+          "message": "程序设计5",
+          "create_date": "2017-12-11T09:55:42.257Z",
+          "age": 35
+        }
+      },
+      {
+        "_index": "red89",
+        "_type": "test",
+        "_id": "8",
+        "_score": 1,
+        "_source": {
+          "date": "2017-12-11T09:55:42.257Z",
+          "attr_name": [
+            "品牌_sku_attr8",
+            "商品类别_sku_attr8",
+            "面料_sku_attr8"
+          ],
+          "name": "中华人民共和国8",
+          "tel": "18612855433",
+          "message": "程序设计8",
+          "create_date": "2017-12-11T09:55:42.257Z",
+          "age": 38
+        }
+      },
+      {
+        "_index": "red89",
+        "_type": "test",
+        "_id": "9",
+        "_score": 1,
+        "_source": {
+          "date": "2017-12-11T09:55:42.257Z",
+          "attr_name": [
+            "品牌_sku_attr9",
+            "商品类别_sku_attr9",
+            "面料_sku_attr9"
+          ],
+          "name": "中华人民共和国9",
+          "tel": "18612855433",
+          "message": "程序设计9",
+          "create_date": "2017-12-11T09:55:42.257Z",
+          "age": 39
+        }
+      },
+      {
+        "_index": "red89",
+        "_type": "test",
+        "_id": "10",
+        "_score": 1,
+        "_source": {
+          "date": "2017-12-11T09:55:42.257Z",
+          "attr_name": [
+            "品牌_sku_attr10",
+            "商品类别_sku_attr10",
+            "面料_sku_attr10"
+          ],
+          "name": "中华人民共和国10",
+          "tel": "18612855433",
+          "message": "程序设计10",
+          "create_date": "2017-12-11T09:55:42.257Z",
+          "age": 40
+        }
+      },
+      {
+        "_index": "red89",
+        "_type": "test",
+        "_id": "12",
+        "_score": 1,
+        "_source": {
+          "date": "2017-12-11T09:55:42.261Z",
+          "attr_name": [
+            "品牌_sku_attr12",
+            "商品类别_sku_attr12",
+            "面料_sku_attr12"
+          ],
+          "name": "中华人民共和国12",
+          "tel": "18612855433",
+          "message": "程序设计12",
+          "create_date": "2017-12-11T09:55:42.261Z",
+          "age": 42
+        }
+      },
+      {
+        "_index": "red89",
+        "_type": "test",
+        "_id": "ZraQK2ABrThwqnonhOO3",
+        "_score": 1,
+        "_source": {}
+      },
+      {
+        "_index": "red89",
+        "_type": "test",
+        "_id": "2",
+        "_score": 1,
+        "_source": {
+          "date": "2017-12-11T09:55:42.256Z",
+          "attr_name": [
+            "品牌_sku_attr2",
+            "商品类别_sku_attr2",
+            "面料_sku_attr2"
+          ],
+          "name": "中华人民共和国2",
+          "tel": "18612855433",
+          "message": "程序设计2",
+          "create_date": "2017-12-11T09:55:42.256Z",
+          "age": 32
+        }
+      },
+      {
+        "_index": "red89",
+        "_type": "test",
+        "_id": "4",
+        "_score": 1,
+        "_source": {
+          "date": "2017-12-11T09:55:42.257Z",
+          "attr_name": [
+            "品牌_sku_attr4",
+            "商品类别_sku_attr4",
+            "面料_sku_attr4"
+          ],
+          "name": "中华人民共和国4",
+          "tel": "18612855433",
+          "message": "程序设计4",
+          "create_date": "2017-12-11T09:55:42.257Z",
+          "age": 34
+        }
+      }
+    ]
+  }
+}
